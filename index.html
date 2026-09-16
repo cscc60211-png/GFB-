@@ -1,0 +1,78 @@
+/* Featured Products */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.product-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px;display:flex;flex-direction:column;transition:.3s}
+.product-card:hover{border-color:rgba(226,27,35,.4);transform:translateY(-5px)}
+.prod-img-wrap{height:220px;margin-bottom:25px;display:grid;place-items:center;background:rgba(255,255,255,.03);border-radius:12px}
+.prod-img-wrap img{max-height:100%;object-fit:contain}
+.prod-cat{color:var(--gray);font-size:.8rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.prod-title{font-size:1.3rem;margin-bottom:15px;font-weight:800}
+.prod-desc{color:var(--gray);font-size:.95rem;margin-bottom:25px;flex-grow:1}
+.specs{border-top:1px solid var(--line);padding-top:20px;margin-bottom:25px;display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.spec-item{font-size:.9rem}
+.spec-label{color:var(--gray);display:block;margin-bottom:4px}
+.spec-val{color:#fff;font-weight:700}
+.card-buttons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:auto}
+
+/* Why Choose Us */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.why-list{list-style:none;display:grid;gap:20px;margin-top:40px}
+.why-list li{display:flex;gap:15px;align-items:flex-start}
+.check-icon{width:28px;height:28px;flex-shrink:0;fill:var(--red)}
+.why-list h3{font-size:1.2rem;margin-bottom:4px}
+.why-list p{color:var(--gray);font-size:.95rem}
+.why-img-wrap{border-radius:20px;overflow:hidden}
+.why-img-wrap img{width:100%;height:100%;object-fit:cover}
+
+/* Testimonial */
+.testimonial-section{background:var(--card2);text-align:center}
+.quote{font-size:clamp(1.5rem,3vw,2rem);font-style:italic;max-width:900px;margin:0 auto 30px;color:var(--white);line-height:1.5}
+.quote:before,.quote:after{content:'"';color:var(--red)}
+.author{font-weight:800;color:var(--white)}
+.author-title{color:var(--gray);font-size:.9rem}
+
+/* Footer */
+footer{background:#060709;border-top:1px solid var(--line);padding:80px 0 30px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:60px}
+.footer-logo{margin-bottom:20px}
+.footer-about{color:var(--gray);font-size:.9rem;max-width:350px}
+.footer-col h4{font-size:1.1rem;margin-bottom:25px;color:white}
+.footer-links{list-style:none;display:grid;gap:15px}
+.footer-links a{color:var(--gray);font-size:.95rem;transition:.2s}
+.footer-links a:hover{color:var(--red);padding-left:5px}
+.social-links{display:flex;gap:15px;margin-top:20px}
+.social-icon{width:24px;height:24px;fill:var(--gray);transition:.2s}
+.social-icon:hover{fill:var(--red)}
+.footer-bottom{border-top:1px solid var(--line);padding-top:30px;text-align:center;color:var(--gray);font-size:.9rem}
+
+/* RTL Support */
+[dir="rtl"] .logo{flex-direction:row-reverse}
+[dir="rtl"] .nav-links{flex-direction:row-reverse}
+[dir="rtl"] .kicker:before{margin-right:0;margin-left:10px}
+[dir="rtl"] .check-icon{margin-right:0;margin-left:15px}
+[dir="rtl"] .footer-links a:hover{padding-left:0;padding-right:5px}
+
+/* Responsive */
+@media(max-width:992px){
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .menu{display:block}
+  .hero{padding-top:150px}
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero-text{margin:0 auto 32px}
+  .buttons{justify-content:center}
+  .why-grid{grid-template-columns:1fr}
+  .why-img-wrap{order:-1;height:300px}
+}
+@media(max-width:576px){
+  .footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="contact-top">
+  <div class="container">
+    <a href="tel:+213696618438" class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z"/></svg>
